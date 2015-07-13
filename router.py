@@ -13,8 +13,8 @@ def getRouter(rtr):
 
 if __name__ == "__main__":
     args = sys.argv
-    print args
+    #print args
     result1 = getRouter(args[1])
-    print result1
-    result2 = getRouter(args[2])
-    print result2
+    print 'HOSTNAME:', result1['hostname']
+    value = args[2]
+    print value.upper() + ': ' + result1[value]
